@@ -87,6 +87,7 @@ class ResizeImage
 	        	// Check PHP supports this file type
 	            if (imagetypes() & IMG_JPG) {
 	                imagejpeg($this->newImage, $savePath, $imageQuality);
+	                imagejpeg($this->newImage);
 	            }
 	            break;
 
